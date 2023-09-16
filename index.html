@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>My Portfolio</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- Custom styles for this template -->
+  <link href=" css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  
+  <style>
+    .gallery_container {
+      position: relative;
+    }
+  
+    .box .imaging {
+      position: relative;
+    }
+  
+    .imaging{
+      overflow: hidden;
+    }
+  
+    .imaging::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity here (0.3 for 30% opacity) */
+      opacity: 0;
+      transition: opacity 0.3s ease; /* Add a smooth transition effect */
+    }
+  
+    .imaging::before {
+      opacity: 1; /* Increase opacity on hover */
+    }
+  
+    h5 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white; /* Set text color to white or your preferred color */
+      z-index: 1; /* Place the text on top of the overlay */
+    }
+  </style>
+  
+  
+  
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container d-block">
+          <div class="main_nav_menu">
+            <div class="fk_width">
+              <!-- <div class="custom_menu-btn">
+                <button onclick="openNav()">
+                  <span class="s-1"> </span>
+                  <span class="s-2"> </span>
+                  <span class="s-3"> </span>
+                </button>
+              </div> -->
+              <!-- <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                  <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="" href="about.html">About </a>
+                  <a class="" href="gallery.html">Gallery </a>
+                  <a class="" href="blog.html">Blog </a>
+                  <a class="" href="testimonial.html">Testimonial </a>
+                </div>
+              </div> -->
+            </div>
+            <a class="navbar-brand" href="index.html">
+              <span>
+                Nisha's CodeCraft
+              </span>
+            </a>
+            <div class="user_option">
+              <a href="#">
+                Contact me
+              </a>
+              <form class="form-inline ">
+                <button class="btn  nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div class="container-fluid">
+        <div class="row slider-row">
+          <div class="col-lg-3 offset-lg-1">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="detail-box">
+                    <h1>
+                      Hi 👋, I'm Nisha Laur
+                    </h1>
+                    <p>
+                      Passionate Web Developer | Aspiring Machine Learning Expert |  Freelancer |  Creative Problem Solver
+                    </p>
+                    <div>
+                      <a href="#">
+                        Know More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="detail-box">
+                    <h1>
+                       About <br/>Me🌟 
+                    </h1>
+                    <p>
+                      A passionate student developer on a mission to bridge creativity and technology. Currently pursuing my B.Tech in IT from IGDTUW, I excel in web development, having crafted over 20 websites. With a flair for innovation and a growing interest in Machine Learning, I'm eager to explore new frontiers.
+                    </p>
+                    <div>
+                      <a href="#">
+                        Know More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel_control-box">
+                <div class="carousel_btn-container">
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active li_one">01</li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1" class="li_two">02</li>
+                  <li class="ol_design"></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 px-0">
+            <div class="img-box">
+              <!-- <img src="images/slider-img.png" alt="" /> -->
+              <img src="images/me1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Discover My Journey
+              </h2>
+              <p>
+                Take a glimpse into my journey – from my love for math in school to my pursuit of excellence in technology. This video captures the essence of my dedication, my quest for knowledge, and the experiences that have shaped my path. Explore how my story aligns with my ambitions, and why I'm eager to embrace new opportunities in the tech world. Join me on this inspirational voyage through my life.
+              </p>
+              <a>
+              Here 👇🏾
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <!-- <div class="play_btn">
+        <a href="#">
+          <img src="images/play.png" alt="" />
+        </a>
+      </div> -->
+      <!-- <img src="images/about-img.png" class="about-img" alt="" /> -->
+      <video width="500px" height="500px" controls="controls" class="about-img">
+        <source src="finalport.mp4" type="video/mp4" />
+       </video>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- gallery section -->
+  <section class="gallery_section layout_padding-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 ml-auto">
+          <div class="heading_container">
+            <h2>
+              My Roles & Contributions
+            </h2>
+            <p>
+              Explore the varied roles I've embraced and the contributions I've made along the way. This section showcases my diverse experiences and the impact each role has had on my journey
+            </p>
+            <a >
+              Here 👇🏾
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery_container" >
+      <div class="gallery_bg">
+        <img src="images/gallery-bg.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="gallery_box">
+          <div class="box b1">
+            <div class="img-box  imaging">
+              <img src="images/gallery-1.jpg" alt="" />
+              <h5>
+                Freelancer : I offered web development and design services, serving clients from around the world.
+              </h5>
+             
+            </div>
+          </div>
+          <div class="box b2">
+            <div class="img-box  imaging">
+              <img src="images/gallery-2.jpg" alt="" />
+              <h5>
+                GDSC Mentor (Google Developer Student Clubs) : As a GDSC Mentor, I mentored and guided 50+ developers, fostering their growth in the tech field.
+              </h5>
+            </div>
+            <div class="img-box  imaging">
+              <img src="images/gallery-3.jpg" alt="" />
+              <h5>
+                Ex-Intern @Snive.io : During my internship, I worked as a full-stack web developer with a startup, contributing to the development of their new website.
+              </h5>
+            </div>
+          </div>
+          <div class="box b3">
+            <div class="img-box  imaging">
+              <img src="images/gallery-1.jpg" alt="" />
+              <h5>
+                Tutor : I served as an online math tutor, assisting students in India, Canada, and America in understanding and excelling in mathematics.
+              </h5>
+            </div>
+            <div class="img-box  imaging">
+              <img src="images/gallery-5.jpg" alt="" />
+              <h5>
+                Community Organizer : I organized and hosted tech-related events and meetups, facilitating knowledge sharing and networking within the tech community.
+              </h5>
+            </div>
+          </div>
+          <div class="box b4">
+            <div class="img-box  imaging">
+              <img src="images/gallery-2.jpg" alt="" />
+              <h5>
+                Hackathon Winner : I actively participated and won in hackathons, where I collaborated with teams to develop innovative tech solutions within tight time frames. 
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end gallery section -->
+
+  <!-- blog section -->
+
+  <section class="blog_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Project Gallery
+              </h2>
+              <p>
+                A Glimpse Into My Finest Work . These creations represent the culmination of my dedication, skills, and creative spirit. As a web developer, freelancer, and enthusiast for all things tech, I've poured my heart and soul into these endeavors.
+              </p>
+              <a href="">
+                Here 👇🏾
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blog_container">
+      <div class="blog_bg">
+        <img src="images/gallery-bg.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="blog_box">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="box b1">
+                <div class="img-box"><video width="500px" height="500px" controls="controls" poster="images/f1.jpeg">
+                  <source src="flexforce.mp4" type="video/mp4" />
+                 </video>
+                  <!-- <img src="images/blog1.jpg" alt="" /> -->
+                </div>
+                <div class="blog-detail">
+                  <div class="blog_title">
+                    <!-- <h5>
+                      Best photography
+                    </h5> -->
+                    <div class="blog_post" onclick="location.href = 'https://flexforactivity.github.io/FLEXFORCE/';">
+                      <h6>
+                        FLEXFORCE : E-commerce Website
+                      </h6>
+                      <h6>
+                        Mern Stack
+                      </h6>
+                    </div>
+                  </div>
+                  <p>
+                    The FLEXFORCE E-commerce Website is built using HTML, CSS, and JavaScript. The website allows users to explore a wide range of products, add items to their cart, and complete secure transactions during the checkout process. The primary goal was to deliver a user-friendly and visually appealing interface that aligns with the client's brand identity.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="box b2">
+                <div class="img-box">
+                  <video width="500px" height="500px" controls="controls"  poster="images/s3.jpeg">
+                    <source src="project_1.mp4" type="video/mp4" />
+                   </video>
+                  <!-- <img src="images/blog2.jpg" alt="" /> -->
+                </div>
+                <div class="blog-detail">
+                  <div class="blog_title">
+                    <!-- <h5>
+                      Photography
+                    </h5> -->
+                    <div class="blog_post" onclick="location.href = 'https://www.snive.io/#';"  >
+                      <h6 >
+                        Snive :One-Step AI Marketing Solution!
+                      </h6>
+                      <h6>
+                        React.js 
+                      </h6>
+                    </div>
+                  </div>
+                  <p>
+                    During the summer of 2023 , I interned at a startup company , Snive.io based in Bangalore , India for 2 months. There I developed their new website , along with that I handled two of their clients . Snive is One-Stop AI Marketing Solution .The company is set to create a change in the world of marketing by making the whole process driven by artificial intelligence. The company not only deliver the best quality in the industry but target optimum utilization of the resources to incarnate the max potential of a product.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end blog section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 ml-auto">
+          <div class="heading_container">
+            <h2>
+              What my clients have to say about me 🫣😄
+            </h2>
+            <p>
+              Nothing speaks louder than the words of those I've had the privilege to work with. Here, you'll find heartfelt testimonials and expressions of appreciation from my valued clients.  
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="client_container">
+      <div class="client_bg">
+        <img src="images/gallery-bg.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="client_box">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box b1">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="client_content-box layout_padding">
+                        <div class="img-box">
+                          <img src="images/c1.png" alt="" />
+                        </div>
+                        <div class="detail-box">
+                          <h4>
+                            Frank Hynes 
+                          </h4>
+                          <p>
+                            This is the second time I have worked with this seller. I am extremely happy with the work, when communicating with Nishu, etc. Everything has been a pleasure. She has great patience with someone who is not an expert in website work. I will definitely work with Nishu again and highly recommend her to others.
+                          </p>
+                          <img src="images/quote.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="client_content-box layout_padding">
+                        <div class="img-box">
+                          <img src="images/c3.png" alt="" />
+                        </div>
+                        <div class="detail-box">
+                          <h4>
+                            Venkat
+                          </h4>
+                          <p>
+                            It was indeed pleasure working on this project with Nishu ji. There was a mess up from service provider side and whole website went off but she redesigned the entire website in 4-5 hours which is amazing. Keep up the good work.
+                          </p>
+                          <img src="images/quote.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="client_content-box layout_padding">
+                        <div class="img-box">
+                          <img src="images/c2.png" alt="" />
+                        </div>
+                        <div class="detail-box">
+                          <h4>
+                            Vania 
+                          </h4>
+                          <p>
+                            Very easy to work with, she is very knowledgeable, We will be placing more orders with her. Thank you
+                          </p>
+                          <img src="images/quote.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="client_content-box layout_padding">
+                        <div class="img-box">
+                          <img src="images/c1.png" alt="" />
+                        </div>
+                        <div class="detail-box">
+                          <h4>
+                            Frank Hynes 
+                          </h4>
+                          <p>
+                            Nishu was extremely helpful from start to finish, going above and beyond any expectations. Communication was excellent. Every effort possible was made to deliver what I required and in very good time. I was not very knowledgeable of the technology. However, I had nothing to worry about as Nishu explained everything I needed to understand. I will certainly retain contact details for Nishu and will use this service again. I am delighted to highly recommend Nishu for website development and design.
+                          </p>
+                          <img src="images/quote.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="client_content-box layout_padding">
+                        <div class="img-box">
+                          <img src="images/c4.png" alt="" />
+                        </div>
+                        <div class="detail-box">
+                          <h4>
+                            Amelia
+                          </h4>
+                          <p>
+                            Great job!!   Easy to work with , responsive and very patient .
+                          </p>
+                          <img src="images/quote.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="client_content-box layout_padding">
+                        <div class="img-box">
+                          <img src="images/c3.png" alt="" />
+                        </div>
+                        <div class="detail-box">
+                          <h4>
+                            Aamir Sohail 
+                          </h4>
+                          <p>
+                            Amazing service. very friendly very professional and hard working. i'll be definitly buying this again. thank you 😊
+                          </p>
+                          <img src="images/quote.png" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box b2">
+                <div class="camera_img-box">
+                  <img src="images/t2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- info section -->
+
+  <section class="info_section ">
+    <div class="info_container layout_padding-top">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            Contact Us
+          </h2>
+        </div>
+        <div class="info_main">
+          <div class="row">
+            <div class="col-md-4 col-lg-3">
+              <div class="info_contact ">
+                <a href="#" class="link-box">
+                  <div class="img-box">
+                    <img src="images/location.png" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <h6>
+                      India
+                    </h6>
+                  </div>
+                </a>
+                <a href="#" class="link-box">
+                  <div class="img-box">
+                    <img src="images/mail.png" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <h6>
+                      nishalaur123678@gmail.com
+                    </h6>
+                  </div>
+                </a>
+                <a href="#" class="link-box">
+                  <div class="img-box">
+                    <img src="images/call.png" alt="" />
+                  </div>
+                  <div class="detail-box">
+                    <h6>
+                      Call +91 7009421759
+                    </h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-2 col-lg-3">
+              <div class="info_link-box">
+                <ul>
+                  <li class=" ">
+                    <a href="https://www.fiverr.com/s/el78jP" class="link-box" target="_blank">
+                      <div class="img-box">
+                        <img src="images/FVRR_BIG.D.png"  style="width: 30px;" alt="" />
+                      </div>
+                      <div class="detail-box">
+                        <h6>
+                          My fiverr profile
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="https://www.linkedin.com/in/nisha-laur/" class="link-box" target="_blank">
+                      <div class="img-box">
+                        <img src="https://www.clipartmax.com/png/small/105-1055005_linkedin-clipart-linkedin-icon-for-resume.png"  style="width: 18px;"  alt="" />
+                      </div>
+                      <div class="detail-box">
+                        <h6>
+                          linkedin.com/in/nisha-laur
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="https://github.com/nisha-laur" class="link-box" target="_blank">
+                      <div class="img-box">
+                        <img src="images/l2.ico"  style="width: 18px;"  alt="" />
+                      </div>
+                      <div class="detail-box">
+                        <h6>
+                        github.com/nisha-laur
+                        </h6>
+                      </div>
+                    </a>
+                  </li>
+                
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="social_box">
+                <a href="#">
+                  <img src="images/facebook.png" alt="" />
+                </a>
+                <a href="#">
+                  <img src="images/twitter.png" alt="" />
+                </a>
+                <a href="#">
+                  <img src="images/linkedin.png" alt="" />
+                </a>
+                <a href="#">
+                  <img src="images/instagram.png" alt="" />
+                </a>
+                <a href="#">
+                  <img src="images/youtube.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="footer_section ">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved. Design by
+        <a href="https://html.design/">
+          NISHA'S CODECRAFT</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+  
+</body>
+
+</html>
